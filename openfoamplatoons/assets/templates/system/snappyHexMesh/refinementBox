@@ -1,0 +1,6 @@
+$name
+{
+    type searchableBox;
+    min ($xMin $yMin $zMin);
+    max ($xMax $yMax $zMax);
+}

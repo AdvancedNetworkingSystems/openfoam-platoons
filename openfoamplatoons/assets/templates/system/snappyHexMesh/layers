@@ -1,0 +1,6 @@
+$name
+{
+    nSurfaceLayers $nSurfaceLayers;
+    firstLayerThickness $firstLayerThickness;
+    expansionRatio $expansionRatio;
+}

@@ -1,0 +1,13 @@
+$name
+{
+    // Surface-wise min and max refinement level
+    level ($min $max);
+
+    // Optional specification of patch type (default is wall). No
+    // constraint types (cyclic, symmetry) etc. are allowed.
+    patchInfo
+    {
+        type wall;
+        inGroups (platoon);
+    }
+}

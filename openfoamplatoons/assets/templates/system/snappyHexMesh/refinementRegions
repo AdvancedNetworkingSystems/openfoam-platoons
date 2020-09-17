@@ -1,0 +1,5 @@
+$name
+{
+    mode inside;
+    levels ((1E15 $max));
+}

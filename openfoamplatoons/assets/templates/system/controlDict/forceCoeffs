@@ -1,0 +1,22 @@
+$name
+{
+    type            forceCoeffs;
+
+    libs            ("libforces.so");
+
+    writeControl    timeStep;
+    timeInterval    1;
+
+    log             yes;
+
+    patches         ($patches);
+    rho             rhoInf;      // Indicates incompressible
+    rhoInf          1;           // Redundant for incompressible
+    liftDir         (0 0 1);
+    dragDir         (1 0 0);
+    CofR            ($CofRX 0 0);  // Axle midpoint on ground
+    pitchAxis       (0 1 0);
+    magUInf         $magUInf;
+    lRef            $lRef;        // Wheelbase length
+    Aref            $Aref;        // Estimated
+}
