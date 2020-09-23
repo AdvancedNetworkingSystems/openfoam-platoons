@@ -1,3 +1,5 @@
+from builtins import set
+
 from PyQt5.QtWidgets import QWidget, QSpinBox, QDoubleSpinBox, QLabel
 from PyQt5.QtWidgets import QVBoxLayout, QHBoxLayout, QFormLayout
 from PyQt5.QtCore import Qt
@@ -29,6 +31,7 @@ class WindTunnel(QWidget):
 
         self.xMin = QSpinBox()
         self.xMin.setRange(-50, 0)
+        self.xMin.setValue(-3)
         leftCol.addRow('X min', self.xMin)
 
         self.yMin = QSpinBox()
@@ -43,14 +46,17 @@ class WindTunnel(QWidget):
 
         self.xMax = QSpinBox()
         self.xMax.setRange(1, 250)
+        self.xMax.setValue(9)
         rightCol.addRow('X max', self.xMax)
 
         self.yMax = QSpinBox()
         self.yMax.setRange(1, 100)
+        self.yMax.setValue(3)
         rightCol.addRow('Y max', self.yMax)
 
         self.zMax = QSpinBox()
         self.zMax.setRange(1, 100)
+        self.zMax.setValue(5)
         rightCol.addRow('Z max', self.zMax)
 
         layers = QFormLayout()
