@@ -12,7 +12,7 @@ Install `pip`:
 sudo apt install python3-pip
 ```
 
-Add directory `.local/bin` to the PATH, append the following line to `bashrc`:
+Add directory `.local/bin` to PATH, appending the following line to `bashrc`:
 
 ```
 export PATH=$PATH:$HOME/.local/bin
@@ -38,13 +38,15 @@ Define an environment variable pointing to the directory:
 export STL_DIR=$HOME/Documents/stl
 ```
 
-Notice how the directory you just copied also contains a file containing the reference measures of the STL files. If you add new STL files, remember to also define their reference measures, otherwise the app won't start.
+Notice how the directory you just copied also contains a file with the reference measures of the STL files in the directory. If you add new STL files, remember to define their reference measures in the file, otherwise the app won't start.
 
-You're almost there! You also need to [install OpenFOAM itself](https://openfoam.org/version/8/). It is needed for a rather simple functionality, which I am working to implement directly in Python. Once this will be done, this dependency will not be needed anymore.
+You're almost there! You also need to [install OpenFOAM v7 itself](https://openfoam.org/download/7-ubuntu/). It is needed for a rather simple functionality, which I am working to implement directly in Python. Once this will be done, this dependency will not be needed anymore.
+
+OpenFOAM v8 has recently been released, but it is not compatible with the cases produced by our app. We will try to catch up and update the repository.
 
 ## Usage
 
-The app starts with a setup arranged for Ahmed body cases. Unless you want to work with Ahmed bodies, I recommend you don't change parameters.
+The app starts with a setup arranged for Ahmed body cases. Unless you want to work with Ahmed bodies only, you will need to modify many parameters which require some knowledge about CFD.
 
 Create a directory to house the case, and launch the app:
 
