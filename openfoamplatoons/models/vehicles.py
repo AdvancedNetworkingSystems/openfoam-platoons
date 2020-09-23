@@ -179,7 +179,10 @@ class Vehicles(QAbstractTableModel):
         firstLayerThickness = {}
         expansionRatio = {}
         for solid in solids(join(STL_DIR, availableStl()[0])):
-            nSurfaceLayers[solid] = 4
+            if solid != 'legs':
+                nSurfaceLayers[solid] = 4
+            else:
+                nSurfaceLayers[solid] = 0
             firstLayerThickness[solid] = 0.001044
             expansionRatio[solid] = 1.2
         self.nSurfaceLayers.append(nSurfaceLayers)
