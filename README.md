@@ -93,20 +93,37 @@ Let's create a case with two Ahmed bodies, with a gap of 1.43 m. As I already me
 Such setup seems to produce good results (read [Andrea's bachelor thesis](https://github.com/andreastedile/bachelor-thesis) if you are interested).
 
 1. Open the app.
+
 2. Go `Length` and adjust your CPU cores.
+
 3. Go to `Vehicles > Distance and STL`. Add a new vehicle with distance 1.43 m.
+
 4. Go to `Wind tunnel`. In Andrea's thesis, wind tunnel's coordinates were chosen as follows:
+
    `X min`:  ⌊first vehicle's `X min` - 3⌋. Since the first vehicle's `X min` is fixed to 0, then it is -3
+
    `X max`: ⌈last vehicle's `X max` + 7⌉ = 11
+
    `Y max`: 3
+
    `Z max`: 5
+
    - To determine vehicles' coordinates, use the eye icon as suggested before.
+
 5. Go to `Region refinement`. Add a new region, and name it "Domain". Use the same coordinates of step 3, and use Refinement = 4.
+
    Add two other regions enclosing the vehicles. Use Refinement = 7. In Andrea's thesis, coordinates were chosen as follows:
+
    `X min`: the vehicle's `X min` - 0.1
+
    `X max`: the vehicle's `X max` + the vehicle's length.
+
    `Y max`: 0.294
+
    ` Z max`:  0.507
+
    Therefore, in the first region, set `X min` = -0.1, `X max` = 2.088; in the second region, set `X min` = 2.373, `X max` = 4.561.
+
 6. Save the case.
+
 7. Run the case, grab a coffee and wait for the simulation to stop.
