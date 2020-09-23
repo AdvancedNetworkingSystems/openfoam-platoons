@@ -6,6 +6,9 @@ from openfoamplatoons.settings import APP_TITLE, STL_DIR
 from openfoamplatoons.assets import availableStl, referenceLength, referenceArea
 from openfoamplatoons.gui.main_window import MainWindow
 
+if sys.version_info[0] < 3:
+    sys.exit(f'{APP_TITLE} requires Python 3. Detected version: {sys.version_info[0]}')
+
 
 def dieNoStl():
     """Inform user that no STL is available and app will not start"""
