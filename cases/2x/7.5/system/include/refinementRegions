@@ -1,0 +1,15 @@
+fullDomain
+{
+    mode inside;
+    levels ((1E15 4));
+}
+refinementBox0
+{
+    mode inside;
+    levels ((1E15 7));
+}
+refinementBox1
+{
+    mode inside;
+    levels ((1E15 7));
+}

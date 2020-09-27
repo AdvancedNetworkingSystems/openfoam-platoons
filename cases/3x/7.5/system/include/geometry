@@ -1,0 +1,39 @@
+Vehicle0
+{
+    type triSurfaceMesh;
+    file "Vehicle0.stl";
+}
+Vehicle1
+{
+    type triSurfaceMesh;
+    file "Vehicle1.stl";
+}
+Vehicle2
+{
+    type triSurfaceMesh;
+    file "Vehicle2.stl";
+}
+fullDomain
+{
+    type searchableBox;
+    min (-3.0 0.0 0.0);
+    max (15.0 3.0 5.0);
+}
+refinementBox0
+{
+    type searchableBox;
+    min (-0.1 0.0 0.0);
+    max (2.088 0.294 0.507);
+}
+refinementBox1
+{
+    type searchableBox;
+    min (3.087 0.0 0.0);
+    max (5.275 0.294 0.507);
+}
+refinementBox2
+{
+    type searchableBox;
+    min (6.275 0.0 0.0);
+    max (8.463 0.294 0.507);
+}

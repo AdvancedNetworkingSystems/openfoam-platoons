@@ -1,0 +1,17 @@
+Vehicle0
+{
+    type triSurfaceMesh;
+    file "Vehicle0.stl";
+}
+fullDomain
+{
+    type searchableBox;
+    min (-3.0 0.0 0.0);
+    max (9.0 3.0 5.0);
+}
+refinementBox
+{
+    type searchableBox;
+    min (-0.1 0.0 0.0);
+    max (2.088 0.294 0.507);
+}

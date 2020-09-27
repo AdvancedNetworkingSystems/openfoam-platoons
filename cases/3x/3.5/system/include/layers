@@ -1,0 +1,24 @@
+lowerWall
+{
+    nSurfaceLayers 2;
+    firstLayerThickness 0.0033;
+    expansionRatio 1.2;
+}
+Vehicle0_body
+{
+    nSurfaceLayers 4;
+    firstLayerThickness 0.001044;
+    expansionRatio 1.2;
+}
+Vehicle1_body
+{
+    nSurfaceLayers 4;
+    firstLayerThickness 0.001044;
+    expansionRatio 1.2;
+}
+Vehicle2_body
+{
+    nSurfaceLayers 4;
+    firstLayerThickness 0.001044;
+    expansionRatio 1.2;
+}

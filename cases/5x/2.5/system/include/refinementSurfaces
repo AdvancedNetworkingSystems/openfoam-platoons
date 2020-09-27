@@ -1,0 +1,65 @@
+Vehicle0
+{
+    // Surface-wise min and max refinement level
+    level (8 8);
+
+    // Optional specification of patch type (default is wall). No
+    // constraint types (cyclic, symmetry) etc. are allowed.
+    patchInfo
+    {
+        type wall;
+        inGroups (platoon);
+    }
+}
+Vehicle1
+{
+    // Surface-wise min and max refinement level
+    level (8 8);
+
+    // Optional specification of patch type (default is wall). No
+    // constraint types (cyclic, symmetry) etc. are allowed.
+    patchInfo
+    {
+        type wall;
+        inGroups (platoon);
+    }
+}
+Vehicle2
+{
+    // Surface-wise min and max refinement level
+    level (8 8);
+
+    // Optional specification of patch type (default is wall). No
+    // constraint types (cyclic, symmetry) etc. are allowed.
+    patchInfo
+    {
+        type wall;
+        inGroups (platoon);
+    }
+}
+Vehicle3
+{
+    // Surface-wise min and max refinement level
+    level (8 8);
+
+    // Optional specification of patch type (default is wall). No
+    // constraint types (cyclic, symmetry) etc. are allowed.
+    patchInfo
+    {
+        type wall;
+        inGroups (platoon);
+    }
+}
+Vehicle4
+{
+    // Surface-wise min and max refinement level
+    level (8 8);
+
+    // Optional specification of patch type (default is wall). No
+    // constraint types (cyclic, symmetry) etc. are allowed.
+    patchInfo
+    {
+        type wall;
+        inGroups (platoon);
+    }
+}
